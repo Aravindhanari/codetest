@@ -7,6 +7,9 @@ django installation:
 	python3 manage.py makemigrations users admin contenttypes sessions auth
 	python3 manage.py makemigrations common
 	python3 manage.py migrate
+6. please create superuser:
+	python manage.py createsuperuser --email admin@example.com --username admin
+7. kindly use 'admintest' as default password for every user execpt 'super user'
 
 
 
