@@ -1,0 +1,17 @@
+<div class="flex flex-wrap mt-4">
+    <!-- <div class="w-full mb-12 px-4">
+      <app-card-page-visits></app-card-page-visits>
+      <app-mytable></app-mytable>
+    </div> -->
+    <div class="w-full mb-12 px-4">
+      <!-- <app-card-table color="dark"></app-card-table> -->
+        <app-my-table [config]="config" [columns]="columns" [fetchUrl]="fetchUrl" 
+            [limitOptions]="tableLimitOptions" [limit]="10" [queryParams]="fetchUrlQp" (event)="doTableAction($event.data)"
+            [screenName]="screenName" [classToAdd]="'aws_sales_orders_list'" 
+            (export)="generateSalesOrder($event, true)" (valueChanges)="updateRow($event)" 
+            [updateRows]="newRowData" [refreshRedTable]="refreshTable" (refreshedData)="dataRefreshed($event)"
+            (previousAppliedFilters)="updateFilter($event)" [commonFilter]="commonFilter">
+        </app-my-table>
+    </div>
+  </div>
+  
