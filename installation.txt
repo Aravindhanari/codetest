@@ -1,0 +1,20 @@
+django installation:
+1. python3 -m venv env
+2. source env/bin/activate
+3. python install - requirements.txt
+4. create database on local manually and set the database name in setting.py file
+5. migration steps:
+	python3 manage.py makemigrations users admin contenttypes sessions auth
+	python3 manage.py makemigrations common
+	python3 manage.py migrate
+
+
+
+angular:
+
+node req : 12
+angular cli ver: 7
+
+to install requirements: npm install
+to start server : npm start
+
