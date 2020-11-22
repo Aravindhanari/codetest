@@ -146,7 +146,7 @@ export class AuthService {
         this.router.navigate(['/dashboard/developer/']);
       }
       else{
-        this.router.navigate(['/dashboard/adminsitraotor/']);
+        this.router.navigate(['/dashboard/admin/']);
       }
  }
 
